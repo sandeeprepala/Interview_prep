@@ -1,0 +1,23 @@
+Encapsulation means combining data and the functions that work on that data into a single unit, like a class. In Object-Oriented Programming, it helps keep things organized and secure.
+
+A class can hide the implementation part and discloses only the functionalities required by other classes. By making class data and methods private, representations or implementations can later be changed without impacting the codes that uses this class.
+It helps in better maintainability, readability and usability. It also helps maintain data integrity by allowing validation and control over the values assigned to variables.
+
+How Encapsulation is Achieved in Java
+Encapsulation in Java is achieved using:
+
+Private data members
+Public getter and setter methods
+
+Advantages of Encapsulation
+The advantages of encapsulation are listed below:
+
+Data Hiding: Encapsulation restricts direct access to class variables, protecting sensitive data from unauthorized access.
+
+Improved Maintainability: Changes to internal implementation can be made without affecting external code that uses the class.
+
+Enhanced Security: Encapsulation allows validation and control over data, preventing invalid or harmful values from being set.
+
+Code Reusability: Encapsulated classes can be reused in different programs without exposing internal logic.
+
+Better Modularity: Encapsulation promotes organized, modular code by keeping data and methods together within a class.
