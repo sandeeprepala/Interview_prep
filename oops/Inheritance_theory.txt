@@ -1,0 +1,41 @@
+🔹 Core Definition
+
+Inheritance allows a class (subclass) to acquire properties and behaviors of another class (superclass).
+
+Implemented using the extends keyword.
+
+Represents an IS-A relationship.
+
+Supports code reusability and hierarchical classification.
+
+🔹 Key Terminology
+
+Superclass / Parent class → Class being inherited.
+
+Subclass / Child class → Class that inherits.
+
+Base class / Derived class → Alternative terms.
+
+IS-A relationship → Fundamental concept behind inheritance.
+
+🔹 Types of Inheritance in Java
+
+Single Inheritance → One child, one parent.
+
+Multilevel Inheritance → Grandparent → Parent → Child.
+
+Hierarchical Inheritance → One parent, multiple children.
+
+Multiple Inheritance → Not supported with classes.
+
+Multiple Inheritance via Interfaces → Supported using implements.
+
+Hybrid Inheritance → Achieved using interfaces.
+
+🔹 Why Java Doesn’t Support Multiple Inheritance (Classes)
+
+To avoid Diamond Problem.
+
+Prevents ambiguity in method resolution.
+
+Maintains simplicity in object model.
