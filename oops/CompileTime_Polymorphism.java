@@ -1,0 +1,20 @@
+
+// Compile time polymorphism also called as Method Overloading
+
+public class CompileTime_Polymorphism {
+    public static void main(String args[]){
+        System.out.println(Helper.Multiply(2, 4));
+        System.out.println(Helper.Multiply(5.5, 6.3));
+    }
+}
+class Helper {
+
+    static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+    static double Multiply(double a, double b)
+    {
+        return a * b;
+    }
+}
