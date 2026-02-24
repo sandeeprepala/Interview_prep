@@ -1,0 +1,36 @@
+🔹 Core Definition
+
+Polymorphism means “many forms”.
+
+One method or object behaves differently depending on context.
+
+Enables the same interface to represent different implementations.
+
+Strongly connected with inheritance and interfaces.
+
+🔹 Types of Polymorphism in Java
+
+1️⃣ Compile-Time Polymorphism (Static Polymorphism)
+
+Achieved using Method Overloading.
+
+Same method name, different parameter list.
+
+Decision made at compile time.
+
+Based on number, type, or order of parameters.
+
+Return type alone cannot differentiate overloaded methods.
+
+
+2️⃣ Runtime Polymorphism (Dynamic Polymorphism)
+
+Achieved using Method Overriding.
+
+Same method signature in parent and child class.
+
+Decision made at runtime.
+
+Based on actual object type (not reference type).
+
+Also called Dynamic Method Dispatch.
