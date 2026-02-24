@@ -1,0 +1,11 @@
+Abstraction in Java is the process of hiding internal implementation details and showing only essential functionality to the user. It focuses on what an object does rather than how it does it.
+
+Abstraction hides the complex details and shows only essential features.
+Abstract classes may have methods without implementation and must be implemented by subclasses.
+By abstracting functionality, changes in the implementation do not affect the code that depends on the abstraction.
+
+How to Achieve Abstraction in Java?
+Java provides two ways to implement abstraction, which are listed below:
+
+Abstract Classes (Partial Abstraction)
+Interface (100% Abstraction)
