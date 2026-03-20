@@ -1,0 +1,38 @@
+function wait(ms) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Done waiting!");
+        }, ms);
+    });
+}
+
+// Using the promise
+wait(2000).then((message) => {
+    console.log(message); // prints after 2 seconds
+});
+
+// output -> Done waiting! after 2000ms
+
+/////////////////////////////////////////////////////////////////////////////////
+
+function checkResult(marks) {
+    return new Promise((resolve, reject) => {
+        if (marks >= 40) {
+            resolve("You passed!");
+        } else {
+            reject("You failed!");
+        }
+    });
+}
+
+// Using the promise
+checkResult(55)
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+// output -> You passed!
