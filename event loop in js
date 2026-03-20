@@ -1,0 +1,13 @@
+console.log("Start"); // Call Stack
+
+setTimeout(() => {
+    console.log("Timeout"); // Web api queue
+}, 0);
+
+Promise.resolve().then(() => { 
+    console.log("Promise"); // Micro tasks queue
+});
+
+console.log("End"); // Call Stack
+
+// priority ->> call stack > micro tasks > web api
