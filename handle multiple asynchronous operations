@@ -1,0 +1,71 @@
+1) Promise.all() -> waits for all to complete , if one fails all fails
+
+function task1() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Task1")
+        },1000)
+    })
+}
+
+function task2() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Task2")
+        },2000)
+    })
+}
+
+Promise.all([task1(), task2()])
+    .then((results) => {
+        console.log(results); // ["Task1", "Task2"]
+    })
+    .catch((err) => console.log(err));
+
+// Output [Task1, Task2]
+
+//////////////////////////////////////////////////////////
+
+2) Promise.allSettled() -> No failure interruption
+
+function task1() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Task1")
+        },1000)
+    })
+}
+
+function task2() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("Task2")
+        },2000)
+    })
+}
+
+Promise.allSettled([task1(), task2()])
+    .then((results) => {
+        console.log(results);
+    });
+
+//output -> 
+[
+  { status: 'fulfilled', value: 'Task1' },
+  { status: 'rejected', reason: 'Task2' }
+]
+//
+
+
+3) Promise.race -> Returns fastest result (success or failure)
+
+Promise.race([task1(), task2()])
+    .then((result) => {
+        console.log(result);
+    });
+
+// Output -> Task1
+
+4) Promise.any -> Ignores failures until one succeeds (So basically -> First success)
+
+
