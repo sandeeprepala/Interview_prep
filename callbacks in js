@@ -1,0 +1,27 @@
+function greet(name, callback) {
+    console.log("Hi " + name);
+    callback();
+}
+
+function sayBye() {
+    console.log("Bye!");
+}
+
+greet("Sandeep", sayBye);
+
+// output Hi Sandeep
+//        Bye!
+
+////////////////////////////////////////
+
+function fetchData(callback) {
+    setTimeout(() => {
+        callback("Data loaded");
+    }, 1000);
+}
+
+fetchData((data) => {
+    console.log(data);
+});
+
+// output -> After 1000ms print Data loaded
